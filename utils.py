@@ -130,7 +130,7 @@ def calculate_Distance(i1, i2):
     """
     return np.sum((i1-i2)**2) / i1.size
 
-def evaluate(config, epoch, pipeline, noise_step=1000, conditional=False, contour=False, data_batch=None):
+def evaluate(config, epoch, pipeline, noise_step=200, conditional=False, contour=False, data_batch=None):
     """
     Helper function to call pipeline generation and save the translated images.
 
